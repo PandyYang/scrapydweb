@@ -24,7 +24,7 @@ class Metadata(db.Model):
     logparser_pid = db.Column(db.Integer, unique=False, nullable=True)
     poll_pid = db.Column(db.Integer, unique=False, nullable=True)
     pageview = db.Column(db.Integer, unique=False, nullable=False, default=0)
-    url_scrapydweb = db.Column(db.Text(), unique=False, nullable=False, default='http://127.0.0.1:5000')
+    url_scrapydweb = db.Column(db.Text(), unique=False, nullable=False, default='http://127.0.0.1:5003')
     url_jobs = db.Column(db.String(255), unique=False, nullable=False, default='/1/jobs/')
     url_schedule_task = db.Column(db.String(255), unique=False, nullable=False, default='/1/schedule/task/')
     url_delete_task_result = db.Column(db.String(255), unique=False, nullable=False, default='/1/tasks/xhr/delete/1/1/')

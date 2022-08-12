@@ -76,7 +76,7 @@ class BaseView(View):
 
         # ScrapydWeb
         self.SCRAPYDWEB_BIND = app.config.get('SCRAPYDWEB_BIND', '0.0.0.0')
-        self.SCRAPYDWEB_PORT = app.config.get('SCRAPYDWEB_PORT', 5000)
+        self.SCRAPYDWEB_PORT = app.config.get('SCRAPYDWEB_PORT', 5003)
 
         self.ENABLE_AUTH = app.config.get('ENABLE_AUTH', False)
         self.USERNAME = app.config.get('USERNAME', '')
@@ -86,7 +86,7 @@ class BaseView(View):
         self.CERTIFICATE_FILEPATH = app.config.get('CERTIFICATE_FILEPATH', '')
         self.PRIVATEKEY_FILEPATH = app.config.get('PRIVATEKEY_FILEPATH', '')
 
-        self.URL_SCRAPYDWEB = app.config.get('URL_SCRAPYDWEB', 'http://127.0.0.1:5000')
+        self.URL_SCRAPYDWEB = app.config.get('URL_SCRAPYDWEB', 'http://127.0.0.1:5003')
 
         # Scrapy
         self.SCRAPY_PROJECTS_DIR = app.config.get('SCRAPY_PROJECTS_DIR', '') or self.DEMO_PROJECTS_PATH

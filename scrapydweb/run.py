@@ -154,7 +154,7 @@ def parse_args(config):
               "visible externally, otherwise, type '-b 127.0.0.1'") % SCRAPYDWEB_BIND
     )
 
-    SCRAPYDWEB_PORT = config.get('SCRAPYDWEB_PORT', 5000)
+    SCRAPYDWEB_PORT = config.get('SCRAPYDWEB_PORT', 5003)
     parser.add_argument(
         '-p', '--port',
         default=SCRAPYDWEB_PORT,
