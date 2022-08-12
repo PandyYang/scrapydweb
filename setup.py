@@ -35,7 +35,7 @@ setup(
     install_requires=[
         "APScheduler >= 3.5.3",  # Aug 15, 2018
         "flask == 2.0.2",  # May 2, 2018
-        "flask-compress == 1.2.0",  # Jan 5, 2017
+        "flask-compress == 1.12",  # Jan 5, 2017
         "Flask-SQLAlchemy >= 2.3.2",  # Oct 11, 2017
         "logparser == 0.8.2",
         "requests >= 2.21.0",  # Dec 10, 2018
